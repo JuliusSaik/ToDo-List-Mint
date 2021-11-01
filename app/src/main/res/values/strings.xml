@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Mint</string>
+    <string name="minticonmainscreen">MintIconMainScreen</string>
+    <string name="mint">mint.</string>
+    <string name="emptyTodoListDesc">Hmm, looks like your list is empt you should add something to do...</string>
+    <string name="buttonadd">ButtonAdd</string>
+    <string name="lineofmainscreen">LineOfMainScreen</string>
+    <string name="settingsbutton">settingsButton</string>
+    <string name="deleteall">DeleteAll</string>
+    <string name="settings">Settings</string>
+    <string name="backbutton">backButton</string>
+    <string name="about">About</string>
+    <string name="developer">Developer</string>
+    <string name="gotolinkx">GoToLinkx</string>
+    <string name="theme">Theme</string>
+    <string name="light_theme">Light Theme</string>
+    <string name="help_amp_feedback"><![CDATA[Help & Feedback]]></string>
+    <string name="rate_the_app">Rate The App</string>
+    <string name="suggest_a_feature">Suggest a feature</string>
+    <string name="report_a_bug">Report a bug</string>
+    <string name="title_activity_add_reminder2">AddReminderActivity2</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+</resources>

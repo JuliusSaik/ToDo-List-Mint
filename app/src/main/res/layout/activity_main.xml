@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="?attr/backgroundcolor"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgMintIcon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/minticonmainscreen"
+        app:srcCompat="@drawable/mint_icon2" />
+
+    <ImageView
+        android:id="@+id/imgMintIconLight"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/minticonmainscreen"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/mint_icon2light" />
+
+    <ImageView
+        android:id="@+id/imgSettings"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="15dp"
+        android:clickable="true"
+        android:contentDescription="@string/settingsbutton"
+        android:focusable="true"
+        app:srcCompat="@drawable/settingsicon2" />
+
+    <TextView
+        android:id="@+id/tvMintText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/mint"
+        android:textColor="?attr/textcolor"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/imgLineTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="15dp"
+        android:contentDescription="@string/lineofmainscreen"
+        app:srcCompat="@drawable/line_top_bar_main_activity" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:adSize="LARGE"
+        app:adUnitId="ca-app-pub-3940256099942544/2247696110" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="120dp"
+        android:fontFamily="@font/roboto_light"
+        android:text="2019-04-18"
+        android:textColor="?attr/textcolor"
+        android:textSize="20sp" />
+
+    <ListView
+        android:id="@+id/list_todo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="15dp"
+        android:divider="?attr/textcolor"
+        android:dividerHeight="1px"
+        android:visibility="visible" >
+
+    </ListView>
+
+    <FrameLayout
+        android:id="@+id/emptyView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgMintIdle"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/mint_leaf2"
+            android:contentDescription="@string/emptyTodoListDesc"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tvHmmAddSomething"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="25dp"
+            android:fontFamily="@font/roboto"
+            android:text="Hmm, looks like your list is empty, you should add something to do..."
+            android:textAlignment="center"
+            android:textColor="?attr/textcolor"
+            android:textSize="20sp"
+            android:visibility="visible" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/bttnAddTodo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="35dp"
+        android:clickable="true"
+        android:contentDescription="@string/buttonadd"
+        android:focusable="true"
+        app:srcCompat="@drawable/plus_icon_add_todo2" />
+
+
+</FrameLayout>

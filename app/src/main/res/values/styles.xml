@@ -1,0 +1,61 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="backgroundcolor">#141414</item>
+        <item name="android:statusBarColor">#121212</item>
+        <item name="textcolor">#FFFF</item>
+        <item name="tintcolor">#FFFF</item>
+        <item name="android:windowAnimationStyle">@style/ThemeAnimationTransition</item>
+        <item name="android:navigationBarColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="lightThemeApp" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="backgroundcolor">#FFFF</item>
+        <item name="darkerbackgroundcolor">#fafafa</item>
+        <item name="textcolor">#262626</item>
+        <item name="tintcolor">#3ad4b0</item>
+        <item name="android:statusBarColor">#f0f0f0</item>
+        <item name="android:windowAnimationStyle">@style/ThemeAnimationTransition</item>
+    </style>
+
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="colorAccent">#3ad4b0</item>
+        <item name="android:textColorPrimary">#FFFF</item>
+        <item name="editTextColor">#FFFF</item>
+        <item name="textColorAlertDialogListItem">#FFFF</item>
+        <item name="android:textColorSecondary">#FFFF</item>
+        <item name="android:colorBackground">#FFFF</item>
+        <item name="android:numbersTextColor">#FFFF</item>
+        <item name="android:background">#141414</item>
+    </style>
+
+    <style name="ThemeAnimationTransition">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+
+        
+    </style>
+
+    <style name="SwitchTheme" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">@color/mint</item>
+
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">@color/mint
+        </item>
+
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">@color/mint
+        </item>
+    </style>
+
+</resources>

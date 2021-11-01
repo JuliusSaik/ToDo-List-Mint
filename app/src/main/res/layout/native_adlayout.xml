@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.gms.ads.formats.NativeAdView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/backgroundcolor">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/ad_icon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="center_vertical"
+                android:background="#fff" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Headline"
+                    android:textColor="?attr/textcolor"
+                    android:textSize="12dp"
+                    android:layout_marginStart="15dp"
+                    android:fontFamily="@font/roboto_medium" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Advertiser"
+                    android:textColor="?attr/textcolor"
+                    android:textSize="10dp"
+                    android:layout_marginStart="15dp"
+                    android:fontFamily="@font/roboto" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RatingBar
+                    android:id="@+id/ad_rating"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="5dp"
+                    android:indeterminateTint="#FFFFFF"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:progressTint="?attr/textcolor"
+                    android:rating="5"
+                    android:stepSize="0.5" />
+
+                <TextView
+                    android:id="@+id/ad_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="$880"
+                    android:textColor="@color/mint"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/call_to_action"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:text="learn more"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:background="#009688" />
+
+        </LinearLayout>
+
+        <com.google.android.gms.ads.nativead.MediaView
+            android:id="@+id/ad_media"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#ffff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ad_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Body of ad"
+            android:textColor="?attr/textcolor"
+            android:textSize="12dp"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/roboto" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</com.google.android.gms.ads.formats.NativeAdView>
